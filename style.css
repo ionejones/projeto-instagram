@@ -12,12 +12,27 @@ body {
     display: flex;
 }
 
+.instagram {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.fotocelular {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
 .imagem {
     border-radius: 6%;
     border: 2px solid black;
     justify-content: center;
     margin-right: 1px;
     margin-top: 10px;
+    height: 90%;
 }
 
 .colunas {
@@ -63,7 +78,7 @@ body {
 .entrar {
     font-size: 12px;
     color: #fff;
-    background-color: rgb(214, 243, 250);
+    background-color: rgb(192, 231, 253);
 }
 
 .caixa1 {
@@ -89,7 +104,7 @@ body {
     align-items: center;
     padding-left: 5px;
     border-radius: 3px;
-    background-color:rgb(214, 243, 250) ;
+    background-color:rgb(192, 231, 253) ;
 }
 
 .linha  {
@@ -158,3 +173,18 @@ body {
   margin-left: 100px;
 }
 
+@media (max-width: 1024px)   {
+    .instagram {
+        width:90%;
+    }
+}
+
+@media(max-width: 650px) {
+    .instagram {
+        width:60%;
+    }
+
+    .imagem {
+        display: none;
+    }
+}
